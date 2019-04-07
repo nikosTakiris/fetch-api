@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="./style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Reddit api</title>
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <header>
+        <h3>Reddit api</h3>
+        </header>
+
+
+        <div class="container">
+
+          <div class="search-wrapper">
+
+          <form id="search-form">
+            <p class="title-search">Reddit search</p>
+            <input type="text" id="search-text" placeholder="Search something">
+
+            <p class="title-search">Sort by :</p>
+            <div class="wrapper-sort"><input type="radio" class="search-sort" name="search-sort" value="new" checked><span class="sort-title">New</span></div>
+            <div class="wrapper-sort"><input type="radio" class="search-sort second-sort" name="search-sort" value="relevance"><span class="sort-title">Relevant</span></div>
+            <div class="wrapper-sort"><input type="radio" class="search-sort second-sort" name="search-sort" value="hot"><span class="sort-title">Hot</span></div>
+            <div class="wrapper-sort"><input type="radio" class="search-sort second-sort" name="search-sort" value="top"><span class="sort-title">Top</span></div>
+
+            <p class="title-search">Limit</p>
+            <select class="search-select">
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="25">25</option>
+              <option value="30">30</option>
+              <option value="35">35</option>
+              <option value="40">40</option>
+              <option value="45">45</option>
+              <option value="50">50</option>
+              </select>
+
+              <button id="search-btn">Search</button>
+            </form>
+
+            </div>
+            
+            <div id="content"></div>
+
+          </div>
+
+      </div>
+
+
+
+    <script src="./index.js" type="text/javascript"></script>
+    </body>
+</html>
