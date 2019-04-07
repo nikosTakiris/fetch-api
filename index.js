@@ -28,7 +28,7 @@ function redditApi(text, sort, limit) {
   let url = "";
   let output = "";
 
-  fetch(`https:www.reddit.com/search.json?q=${text}&sort=${sort}&limit=${limit}`)
+  fetch(`https://www.reddit.com/search.json?q=${text}&sort=${sort}&limit=${limit}`)
   .then(response => response.json())
   .then(reddit => reddit.data.children.map(current => {
     console.log(current.data);
