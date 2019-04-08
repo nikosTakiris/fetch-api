@@ -49,8 +49,8 @@ function redditApi(text, sort, limit) {
 
     content.style.opacity = 1;
     document.getElementById('content').innerHTML = output;
-  }));
-}
+  }))
+  .catch(err => console.log(err));
 
 // short text
 function shortText(text, limit) {
