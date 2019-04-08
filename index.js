@@ -51,7 +51,8 @@ function redditApi(text, sort, limit) {
     document.getElementById('content').innerHTML = output;
   }))
   .catch(err => console.log(err));
-
+    
+}
 // short text
 function shortText(text, limit) {
   let short = text.indexOf(' ', limit);
