@@ -31,8 +31,7 @@ function redditApi(text, sort, limit) {
   fetch(`https://www.reddit.com/search.json?q=${text}&sort=${sort}&limit=${limit}`)
   .then(response => response.json())
   .then(reddit => reddit.data.children.map(current => {
-   .catch(err => console.log(err));
-    title = current.data.title;
+     title = current.data.title;
     subject = (current.data.selftext !== "") ? current.data.selftext : "";
     thumbnail = (current.data.preview) ? current.data.preview.images[0].source.url : "./images/red.jpg";
     url = current.data.url;
